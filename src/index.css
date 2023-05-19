@@ -28,4 +28,9 @@ body {
 .action-icons:hover {
   cursor: pointer;
 }
+.cart-total{
+   font-size: 20px;
+   font-weight: bold;
+   padding: 10px;
+}
 
