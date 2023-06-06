@@ -1,31 +1,14 @@
 import React from 'react';
 import Cart from './Cart';
 import Nav from './Nav';
+import * as firebase from 'firebase';
 
 class App extends React.Component {
   constructor(){
     super();
     this.state =
     {
-        products:
-        [
-            { title:'Mobile phone',
-            price:999,
-            qty:1,
-            img:'https://media.istockphoto.com/id/179284565/photo/mobile-phone-samsung.jpg?s=1024x1024&w=is&k=20&c=5AtCZ3cvm3MZ2Y4tFuAj4tRyNzoFquijrzH8zoD7NBc=',
-            id:1
-           },
-            { title:'Watch',
-            price:99,
-            qty:1,
-            img:'https://media.istockphoto.com/id/1368179045/photo/a-silver-stainless-steel-analog-watch.jpg?b=1&s=170667a&w=0&k=20&c=dRs8nww4M4ibLBD1UMUzBYcw13lnk3Z7s0THB9_SM6Y=',
-            id:2},
-            { title:'Ball',
-            price:500,
-            qty:2,
-            img:'https://plus.unsplash.com/premium_photo-1676901712467-3d6be41dd17b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb3RiYWxsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60', 
-            id:3}
-        ]
+        products:[]
       //this.increaseQuantity=this.increaseQuantity.bind(this);
 
     }
@@ -103,4 +86,19 @@ export default App;
 
       
    
-      
+    //   { title:'Mobile phone',
+    //   price:999,
+    //   qty:1,
+    //   img:'https://media.istockphoto.com/id/179284565/photo/mobile-phone-samsung.jpg?s=1024x1024&w=is&k=20&c=5AtCZ3cvm3MZ2Y4tFuAj4tRyNzoFquijrzH8zoD7NBc=',
+    //   id:1
+    //  },
+    //   { title:'Watch',
+    //   price:99,
+    //   qty:1,
+    //   img:'https://media.istockphoto.com/id/1368179045/photo/a-silver-stainless-steel-analog-watch.jpg?b=1&s=170667a&w=0&k=20&c=dRs8nww4M4ibLBD1UMUzBYcw13lnk3Z7s0THB9_SM6Y=',
+    //   id:2},
+    //   { title:'Ball',
+    //   price:500,
+    //   qty:2,
+    //   img:'https://plus.unsplash.com/premium_photo-1676901712467-3d6be41dd17b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb3RiYWxsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60', 
+    //   id:3}
